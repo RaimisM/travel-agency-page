@@ -6,8 +6,6 @@
     <title>Travel agency: Homepage</title>
     <meta name="description" content="Travel agency: Homepage">
     <meta name="author" content="You">
-    
-    <!-- External Stylesheets -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -18,16 +16,12 @@
       href="https://fonts.googleapis.com/css?family=Dancing+Script&family=Montserrat:400,700&&display=swap"
       rel="stylesheet"
     >
-    <!-- Internal Stylesheets -->
-    <link href="./css/global.css" rel="stylesheet" type="text/css">
     <link href="./css/header.css" rel="stylesheet" type="text/css">
     <link href="./css/destinations.css" rel="stylesheet" type="text/css">
     <link href="./css/footer.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    
-    <!-- Header Section -->
-    <header class="header">
+    <header>
       <div class="header-top">
         <!-- Search Section -->
         <div class="search">
@@ -41,115 +35,161 @@
         </div>
       
         <!-- Menu Section -->
-        <nav class="menu">
+        <div class="menu">
           <!-- Menu Icon (visible only on small screens) -->
           <img src="./icons/three-bars-white.svg" alt="Menu" class="menu-icon">
   
-          <!-- Menu Buttons (visible only on larger screens) -->
+          <!-- Buttons (visible only on larger screens) -->
           <div class="menu-buttons">
-            <button class="menu-btn destinations-btn">Destinations</button>
-            <button class="menu-btn signin-btn">Sign In</button>
+            <div class="menu-btn-box destinations-box">
+              <button class="menu-btn destinations-btn">Destinations</button>
           </div>
-        </nav>
+          <div class="menu-btn-box signin-box">
+              <button class="menu-btn signin-btn">Sign In</button>
+            </div>
+          </div>
       </div>
+  </div>
       
-      <!-- Main Content in Header -->
+      
       <div class="header-content">
         <div class="tagline">Year long travel</div>
-        <h1 class="main-title">Book your next<br>destination</h1>
+        <h1 class="main-title">
+          Book your next<br>
+          destination
+        </h1>
+        <!-- Booking form -->
       </div>
-      
-      <!-- Booking Form -->
-      <form class="booking-form">
+      <form>
         <fieldset>
-          <div>
-            <label for="destination">Destination</label>
-            <select name="destination" id="destination" required>
-              <option value="" disabled selected>Destination</option>
-              <option value="paris">Paris</option>
-              <option value="tokyo">Tokyo</option>
-              <option value="sydney">Sydney</option>
-              <option value="sanFrancisco">San Francisco</option>
-            </select>
-          </div>
-
-          <div class="date-range">
             <div>
-              <label for="date-from">From</label>
-              <input type="date" id="date-from" name="date-from">
+                <label for="destination">Destination</label>
+                <select name="destination" id="destination" required>
+                    <option value="" disabled selected>Destination</option>
+                    <option value="paris">Paris</option>
+                    <option value="tokyo">Tokyo</option>
+                    <option value="sydney">Sydney</option>
+                    <option value="sanFrancisco">San Francisco</option>
+                </select>
             </div>
+  
+            <div class="date-range">
+              <div>
+                  <label for="date-from">From</label>
+                  <input type="date" id="date-from" name="date-from">
+              </div>
+              <div>
+                  <label for="date-to">To</label>
+                  <input type="date" id="date-to" name="date-to">
+              </div>
+          </div>
+          
+  
             <div>
-              <label for="date-to">To</label>
-              <input type="date" id="date-to" name="date-to">
+                <label for="guests">Guests</label>
+                <input placeholder="2" type="number" name="guests" id="guests" min="1" max="10" step="1" required>
             </div>
-          </div>
-
-          <div>
-            <label for="guests">Guests</label>
-            <input placeholder="2" type="number" name="guests" id="guests" min="1" max="10" step="1" required>
-          </div>
-
-          <div>
-            <button type="submit" class="submit-button">&#8594;</button>
-          </div>
-        </fieldset>
+  
+            <div>
+                <button type="submit" class="submit-button">&#8594;</button>
+            </div>
+  
+          </fieldset>
       </form>
     </header>
     
-    <!-- Main Content Section -->
-    <main class="main-content">
-      <section class="destinations-section">
+    <section>
+      <main>
         <h2>Destinations</h2>
-        <p>Lorem ipsum dolor sit amet, adventure travel mountains, beach resorts, and cultural experiences await...</p>
+        <div>
+          <p>
+            Lorem ipsum dolor sit amet, adventure travel mountains, beach resorts
+            and cultural experiences await. Pack your bags and get ready to
+            <b>explore the world!</b> From bustling cities to tranquil countryside
+            getaways, there's a destination for every type of traveler.
+          </p>
+          <p>
+            If you're a culture lover, the historic cities of London and Edinburgh
+            should be at the top of your list. Walk the streets of London's West
+            End, marvel at the architecture of Big Ben and Buckingham Palace, and
+            take in a show at the Globe Theatre.
+          </p>
+          <p>
+            For those seeking a bit of relaxation, <b>head to the spas</b> and
+            resorts of the English countryside. Indulge in a luxurious massage or
+            take a dip in a hot spring. If you're looking for something a bit more
+            active, strap on your hiking boots and tackle the rugged trails of the
+            coastal cliffs.
+          </p>
+        </div>
         <div class="image-grid">
-          <div class="destination-image">
+          <div class="destination_image">
             <img src="./images/destinations/paris.jpg" alt="Paris image with Eiffel Tower">
             <h3>Paris</h3>
             <h4>France</h4>
           </div>
-          <div class="destination-image">
+          <div class="destination_image">
             <img src="./images/destinations/san-francisco.jpg" alt="San Francisco image with Golden Gate Bridge">
             <h3>San Francisco</h3>
             <h4>United States</h4>
           </div>
-          <div class="destination-image">
+          <div class="destination_image">
             <img src="./images/destinations/sydney.jpg" alt="Sydney image with Opera House">
             <h3>Sydney</h3>
             <h4>Australia</h4>
           </div>
-          <div class="destination-image">
+          <div class="destination_image">
             <img src="./images/destinations/tokyo.jpg" alt="Tokyo image with Skytree">
             <h3>Tokyo</h3>
             <h4>Japan</h4>
           </div>
         </div>
-      </section>
-    </main>
+      </main>
+    </section>
     
-    <!-- Footer Section -->
     <footer class="footer">
-      <div class="footer-links">
-        <h5>Links</h5>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Destinations</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
+      <!-- Links -->
+      <div class="links">
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5 class="mb-3 text-dark">Links</h5>
+          <ul class="list-unstyled mb-0">
+            <li class="mb-1">
+              <a href="#" class="link">Home</a>
+            </li>
+            <li class="mb-1">
+              <a href="#" class="link">Destinations</a>
+            </li>
+            <li class="mb-1">
+              <a href="#" class="link">About</a>
+            </li>
+            <li>
+              <a href="#" class="link">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
-      
-      <!-- Newsletter Form -->
+    
+      <!-- Newsletter form -->
       <div class="newsletter">
-        <h3>Newsletter</h3>
-        <p>Subscribe to get the latest updates and offers.</p>
-        <div class="input-group">
-          <input type="email" placeholder="Email">
-          <button type="submit">Subscribe</button>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="content">
+                <h3>Newsletter</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                  euismod, nisl nec tincidunt dapibus, magna libero fermentum augue.
+                </p>
+                <div class="input-group">
+                  <input type="email" class="form-control" placeholder="Email">
+                  <button class="btn" type="submit">Subscribe</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
-
-    <!-- Optional JS Libraries -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    
   </body>
 </html>

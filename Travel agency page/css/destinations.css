@@ -1,0 +1,78 @@
+/* destinations.css */
+
+/* Main Section Styling */
+section {
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+    margin: 0 auto;
+  }
+
+main {
+    width: 70%;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  b {
+    color: #ff6600;
+  }
+  
+  /* Image Grid Styling */
+  .image-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .destination_image {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    width: calc(25% - 20px);
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .destination_image img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .destination_image h3 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .destination_image h4 {
+    font-size: 18px;
+    color: #777;
+  }
+  
+  /* Make images responsive */
+  @media (max-width: 768px) {
+    .destination_image {
+      width: calc(50% - 20px);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .destination_image {
+      width: 100%;
+    }
+  }
+  
