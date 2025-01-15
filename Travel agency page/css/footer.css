@@ -1,11 +1,17 @@
 /* footer.css */
 
 /* Footer Container */
+body {
+    background-color: gold;
+}
+
 .footer {
-    background-color: #333;
-    color: white;
-    padding: 40px 20px;
+    display: flex;
+    color: black;
     margin: 0 auto;
+    padding-bottom: 80px;
+    padding-top: 40px;
+    width: 70%;
   }
   
   .links, .newsletter {
@@ -38,25 +44,24 @@
   }
   
   a.link {
-    color: white;
+    color: black;
     text-decoration: none;
     font-size: 16px;
   }
   
   a.link:hover {
     text-decoration: underline;
-    color: #ff6600;
   }
   
   /* Newsletter Section */
-  .newsletter {
-    background-color: #444;
-    padding: 30px;
-    border-radius: 8px;
-  }
   
   .newsletter .content {
-    text-align: center;
+    text-align: left;
+  }
+  .newsletter-text {
+    font-size: 16px;
+    margin-bottom: 20px;
+    width: 100%;
   }
   
   .newsletter h3 {
@@ -70,33 +75,50 @@
     margin-bottom: 20px;
   }
   
-  .input-group {
+  .footer .input-group {
     display: flex;
-    justify-content: center;
-  }
-  
-  .input-group input {
-    padding: 12px;
-    width: 250px;
-    border: none;
-    border-radius: 4px;
-  }
-  
-  .input-group button {
-    padding: 12px 20px;
-    background-color: #ff6600;
+    width: 100%;
+    align-items: center;
+    box-sizing: border-box; /* Important: Include padding and border in width */
+}
+
+.footer .input-group input[type="email"] {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-right: none;
+    border-radius: 4px 0 0 4px;
+    box-sizing: border-box;
+    min-width: 0; /* Important for flexbox to work correctly with inputs */
+}
+
+.footer .input-group .btn {
+    padding: 8px 16px;
+    background-color: green;
     color: white;
-    border: none;
-    border-radius: 4px;
+    border: 1px solid #ccc;
+    border-left: none; /* Remove left border */
     cursor: pointer;
-  }
+    border-radius: 0 4px 4px 0;
+    box-sizing: border-box;
+    white-space: nowrap; /* Prevent button text from wrapping */
+}
+
+.footer .input-group .btn:hover {
+    background-color: rgb(2, 90, 2);
+}
   
-  .input-group button:hover {
-    background-color: #ff8533;
-  }
+  
   
   @media (max-width: 768px) {
     .links, .newsletter {
       width: 90%;
     }
+    .footer {
+        flex-direction: column; /* Stack the sections vertically */
+        align-items: left; /* Center content horizontally */
+        text-align: left; /* Center text */
+    }
+
   }
+  
