@@ -22,30 +22,29 @@
   </head>
   <body>
     <header>
-      <div class="header-top">
-        <!-- Search Section -->
-        <div class="search">
-          <img src="./icons/search-white.svg" alt="Search" class="search-icon">
-          <input type="text" placeholder="Search" class="search-input">
-        </div>
-      
-        <!-- Logo Section -->
-        <div class="logo-container">
-          <img src="./icons/globe-white.svg" alt="Logo" class="logo">
-        </div>
-      
-        <!-- Menu Section -->
-        <div class="menu">
-          <img src="./icons/three-bars-white.svg" alt="Menu" class="menu-icon">
-          <div class="menu-buttons">
-            <div class="menu-btn-box destinations-box">
-              <button class="menu-btn destinations-btn">Destinations</button>
-          </div>
-          <div class="menu-btn-box signin-box">
-              <button class="menu-btn signin-btn">Sign In</button>
-            </div>
-          </div>
-      </div>
+      <!-- Navbar Section -->
+<nav class="navbar">
+  <!-- Logo Section -->
+  <div class="logo-container">
+    <img src="./icons/globe-white.svg" alt="Logo" class="logo">
+  </div>
+
+  <!-- Search Section -->
+  <div class="search">
+    <img src="./icons/search-white.svg" alt="Search" class="search-icon">
+    <input type="text" placeholder="Search" class="search-input">
+  </div>
+
+  <!-- Menu Section -->
+  <div class="menu">
+    <ul class="menu-list">
+      <li><a href="#destinations" class="menu-link destinations-btn">Destinations</a></li>
+      <li><a href="#signin" class="menu-link signin-btn">Sign In</a></li>
+    </ul>
+    <img src="./icons/three-bars-white.svg" alt="Menu" class="menu-icon">
+  </div>
+</nav>
+
   </div>
       
       <div class="header-content">
@@ -164,7 +163,7 @@
         </div>
       </div>
     
-      <!-- Newsletter -->
+      <!-- Newsletter form -->
       <div class="newsletter">
         <div class="container">
           <div class="row">

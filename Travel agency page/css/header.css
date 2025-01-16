@@ -1,4 +1,3 @@
-/* Container for header */
 header {
     display: flex;
     flex-direction: column;
@@ -12,19 +11,97 @@ header {
     height: 100vh;
 }
 
-.header-top, .header-content, form {
+.header-content, form {
     width: 70%;
     margin: 0 auto;
 }
 
-/* Header(Search, Logo, Menu) */
-.header-top {
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: rgba(255, 255, 255, 0.4);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: rgba(43, 84, 128, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .navbar {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+.navbar .logo-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.navbar .logo {
+    width: 40px;
+    height: auto;
+}
+
+.navbar .search {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    position: relative;
+}
+
+.navbar .search-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.navbar .search-input {
+    padding: 0.5rem 1.5rem;
+    padding-left: 2rem;
+    border: none;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.6);
+    color: black;
+    outline: none;
+}
+
+.navbar .menu {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.navbar .menu-list {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar .menu-link {
+    text-decoration: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    border-radius: 40px;
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s;
+}
+
+.navbar .menu-link.destinations-btn {
+    color: white;
+    background: none;
+}
+
+.navbar .menu-link:hover {
+    background-color: #ff8533;
+}
+
+.navbar .menu-icon {
+    display: none;
 }
 
 .main-title {
@@ -40,72 +117,6 @@ header {
     font-weight: bold;
 }
 
-.search {
-    display: flex;
-    align-items: center;
-    width: 200px;
-    position: relative;
-}
-
-.search-icon {
-    width: 20px;
-    height: 20px;
-    margin-right: 8px;
-}
-
-.search-input {
-    padding: 0.5rem 1.5rem;
-    padding-left: 2rem;
-    border: none;
-    border-radius: 4px;
-    background-color: rgba(255, 255, 255, 0.6);
-    color: white;
-    outline: none;
-}
-
-.logo-container {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.logo {
-    width: 50px;
-    height: auto;
-}
-
-.menu {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.menu-buttons {
-    display: flex;
-    gap: 10px;
-}
-
-.menu-btn {
-    background-color: white;
-    color: black;
-    border: none;
-    padding: 8px 16px;
-    font-size: 16px;
-    border-radius: 40px;
-}
-
-.destinations-btn {
-    color: white;
-    background:none;
-}
-
-.menu-btn:hover {
-    background-color: #ff8533;
-}
-
-.menu-icon {
-    display: none;
-}
-
 fieldset {
     border: none;
     display: flex;
@@ -119,7 +130,7 @@ fieldset {
 }
 
 .date-range div {
-    flex: 1; 
+    flex: 1;
 }
 
 .date-range label {
@@ -157,26 +168,22 @@ button:hover {
 }
 
 @media (max-width: 768px) {
-    .header-top, .header-content, form {
+    .header-content, form {
         width: 90%;
     }
 
-    .menu-buttons {
+    .navbar .menu-list {
         display: none;
     }
 
-    .menu-icon {
+    .navbar .menu-icon {
         display: block;
         width: 30px;
         height: auto;
     }
 
-    .search {
-        width: 140px;
-    }
-
-    fieldset {
-        flex-direction: column;
+    .navbar .search {
+        width: 150px;
     }
 
     .main-title {
@@ -188,6 +195,8 @@ button:hover {
         font-size: 24px;
         font-weight: bold;
     }
+
+    fieldset {
+        flex-direction: column;
+    }
 }
-    
-    
