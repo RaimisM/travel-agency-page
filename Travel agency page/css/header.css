@@ -1,5 +1,3 @@
-/* header.css */
-
 /* Container for header */
 header {
     display: flex;
@@ -19,7 +17,7 @@ header {
     margin: 0 auto;
 }
 
-/* Header Top Section (Search, Logo, Menu) */
+/* Header(Search, Logo, Menu) */
 .header-top {
     display: flex;
     justify-content: space-between;
@@ -28,7 +26,6 @@ header {
     background-color: rgba(255, 255, 255, 0.4);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-
 
 .main-title {
     font-size: 68px;
@@ -100,27 +97,29 @@ header {
     color: white;
     background:none;
 }
+
 .menu-btn:hover {
     background-color: #ff8533;
 }
 
-/* Menu icon for mobile */
 .menu-icon {
     display: none;
 }
+
 fieldset {
     border: none;
     display: flex;
     flex-direction: row;
     gap: 20px;
 }
+
 .date-range {
     display: flex;
-    gap: 20px; /* Adjust the gap between the date fields */
+    gap: 20px;
 }
 
 .date-range div {
-    flex: 1; /* Ensures both date fields take up equal space */
+    flex: 1; 
 }
 
 .date-range label {
@@ -132,12 +131,35 @@ fieldset {
     border-radius: 4px;
 }
 
+/* Form */
+label {
+    font-weight: bold;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 0px;
+}
+
+.submit-button {
+    background-color: gold;
+    padding: 7px 20px;
+    border: none;
+    margin-top: 24px;
+    border-radius: 40px;
+}
+
+button:hover {
+    background-color: goldenrod;
+}
+
 @media (max-width: 768px) {
     .header-top, .header-content, form {
         width: 90%;
     }
-
-
 
     .menu-buttons {
         display: none;
@@ -167,37 +189,5 @@ fieldset {
         font-weight: bold;
     }
 }
-
-    
-
-    
-
-    /* Form Styling */
-    
-
-    label {
-        font-weight: bold;
-    }
-
-    input, select, button {
-        width: 100%;
-        padding: 6px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        margin: 0px;
-    }
-
-    .submit-button {
-        background-color: gold;
-        padding: 7px 20px;
-        border: none;
-        margin-top: 24px;
-        border-radius: 40px;
-    }
-
-    button:hover {
-        background-color: goldenrod;
-    }
-
     
     
