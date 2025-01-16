@@ -183,7 +183,7 @@ button:hover {
     }
 
     .navbar .search {
-        width: 150px;
+        width: 135px;
     }
 
     .main-title {
@@ -200,3 +200,10 @@ button:hover {
         flex-direction: column;
     }
 }
+@media (max-height: 700px) {
+    header {
+        height: 700px;
+    }
+}
+
+
