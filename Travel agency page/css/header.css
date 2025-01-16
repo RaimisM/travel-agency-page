@@ -4,7 +4,7 @@
 header {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     background-image: url('../images/header.jpg');
     background-size: cover;
     background-position: center;
@@ -27,6 +27,20 @@ header {
     padding: 10px 20px;
     background-color: rgba(255, 255, 255, 0.4);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.main-title {
+    font-size: 68px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    line-height: 1.2;
+}
+
+.tagline {
+    margin-top: 25%;
+    font-size: 34px;
+    font-weight: bold;
 }
 
 .search {
@@ -122,9 +136,7 @@ fieldset {
         width: 90%;
     }
 
-    header {
-        height: auto;
-    }
+
 
     .menu-buttons {
         display: none;
@@ -143,18 +155,21 @@ fieldset {
     fieldset {
         flex-direction: column;
     }
-}
-
-    .tagline {
-        font-size: 20px;
-        font-weight: bold;
-    }
 
     .main-title {
-        font-size: 40px;
-        font-family: 'Montserrat', sans-serif;
-        line-height: 1.2;
+        font-size: 48px;
     }
+
+    .tagline {
+        margin-top: 20%;
+        font-size: 24px;
+        font-weight: bold;
+    }
+}
+
+    
+
+    
 
     /* Form Styling */
     
@@ -165,14 +180,15 @@ fieldset {
 
     input, select, button {
         width: 100%;
-        padding: 10px;
+        padding: 7px;
         border: 1px solid #ccc;
         border-radius: 4px;
+        margin: 0px;
     }
 
     .submit-button {
         background-color: #ff6600;
-        padding: 10px 20px;
+        padding: 7px 20px;
         border: none;
         margin-top: 24px;
     }
