@@ -67,12 +67,12 @@ body {
   .newsletter h3 {
     font-size: 24px;
     font-weight: bold;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
   
   .newsletter p {
     font-size: 16px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   
   .footer .input-group {
@@ -93,7 +93,6 @@ body {
 }
 
 .footer .input-group .btn {
-    padding: 8px 16px;
     background-color: green;
     color: white;
     border: 1px solid #ccc;
@@ -111,14 +110,25 @@ body {
   
   
   @media (max-width: 768px) {
-    .links, .newsletter {
-      width: 90%;
-    }
     .footer {
         flex-direction: column; /* Stack the sections vertically */
         align-items: left; /* Center content horizontally */
         text-align: left; /* Center text */
+        width: 90%;
+        margin: none;
     }
+
+    .links, .newsletter {
+        width: 100%;
+        margin: 0;
+    }
+    .newsletter {
+      padding: 0; /* Remove padding specifically for newsletter */
+    }
+    .col-sm-12 {
+        padding: 0;
+    }
+
 
   }
   

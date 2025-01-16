@@ -48,13 +48,13 @@ main {
   .destination_image img {
     width: 100%;
     height: auto;
-    filter: brightness(60%);
+    filter: brightness(70%);
     transition: transform 0.5s;
   }
 
   .destination_image img:hover {
     transform: scale(1.5);
-    filter: brightness(100%);
+    filter: brightness(95%);
   }
 
   .destination_image h3, .destination_image h4 {
