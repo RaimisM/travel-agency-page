@@ -20,19 +20,20 @@
     <link href="./css/destinations.css" rel="stylesheet" type="text/css">
     <link href="./css/footer.css" rel="stylesheet" type="text/css">
   </head>
-  <body>
+  <body class="use-header-styles">
     <header>
       <!-- Navbar Section -->
-    <nav class="navbar">
-      <!-- Logo Section -->
-      <div class="logo-container">
-        <img src="./icons/globe-white.svg" alt="Logo" class="logo">
-      </div>
+    <nav class="navbar" id="navbar">
 
       <!-- Search Section -->
       <div class="search">
-        <img src="./icons/search-white.svg" alt="Search" class="search-icon">
         <input type="text" placeholder="Search" class="search-input">
+        <button id="search-button"><img src="./icons/search-white.svg" alt="Search" class="search-icon"></button>
+      </div>
+
+      <!-- Logo Section -->
+      <div class="logo-container">
+        <img src="./icons/globe-white.svg" alt="Logo" class="logo">
       </div>
 
       <!-- Menu Section -->
@@ -43,9 +44,10 @@
             <img src="./icons/three-bars-white.svg" alt="Menu" class="menu-icon">
         </label>
         <ul class="menu-list">
-            <li><a href="destinations.html" class="menu-link destinations-btn">Destinations</a></li>
-            <li><a href="#signin" class="menu-link signin-btn">Sign In</a></li>
-        </ul>
+          <li><a href="destinations.html" class="menu-link destinations-btn">Destinations</a></li>
+          <li><a href="#signin" class="menu-link signin-btn">Sign In</a></li>
+      </ul>
+      
     </div>
     </nav>
 
@@ -89,7 +91,7 @@
             </div>
   
             <div>
-                <button type="submit" class="submit-button">&#8594;</button>
+                <button id="form-button" type="submit" class="submit-button">&#8594;</button>
             </div>
   
           </fieldset>

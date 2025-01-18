@@ -1,4 +1,10 @@
-header {
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+.use-header-styles header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -45,18 +51,23 @@ header {
   position: relative;
 }
 
+#search-button {
+  background-color: gold;
+  width: 50px;
+    height: 40px;
+}
+
 .navbar .search-icon {
-  width: 20px;
-  height: 20px;
-  margin-right: 8px;
+  width: 25px;
+  height: 25px;
+  margin-right: 0px;
 }
 
 .navbar .search-input {
-  padding: 0.5rem 1.5rem;
-  padding-left: 2rem;
+  height: 40px;
   border: none;
   border-radius: 4px;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.663);
   color: black;
   outline: none;
 }
@@ -74,25 +85,6 @@ header {
   list-style: none;
   padding: 0;
   margin: 0;
-}
-
-.navbar .menu-link {
-  text-decoration: none;
-  padding: 8px 16px;
-  font-size: 16px;
-  border-radius: 40px;
-  background-color: white;
-  color: black;
-  transition: background-color 0.3s;
-}
-
-.navbar .menu-link.destinations-btn {
-  color: white;
-  background: none;
-}
-
-.navbar .menu-link:hover {
-  background-color: #ff8533;
 }
 
 .navbar .menu-icon {
@@ -159,7 +151,7 @@ button {
   margin: 0px;
 }
 
-.submit-button {
+#form-button {
   background-color: gold;
   padding: 7px 20px;
   border: none;
@@ -167,9 +159,36 @@ button {
   border-radius: 40px;
 }
 
-button:hover {
+#form-button:hover {
   background-color: goldenrod;
 }
+
+.menu-link {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 40px;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border: none;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  
+  .menu-link.signin-btn {
+    background-color: gold;
+  }
+  
+  .menu-link.signin-btn:hover {
+    background-color: goldenrod;
+    transform: scale(1.2);
+  }
+  
+  .menu-link.destinations-btn:hover {
+    transform: scale(1.2);
+  }
 
 @media (max-width: 768px) {
   .header-content,
@@ -180,8 +199,8 @@ button:hover {
   .navbar .menu-list {
     display: none;
     flex-direction: column;
-    padding: 15px;
-    background-color: rgba(38, 144, 162, 0.8);
+    padding: 18px;
+    background-color: rgba(218, 165, 32, 0.879);
     opacity: 0.9;
     position: absolute;
     top: 100%;
@@ -228,8 +247,9 @@ button:hover {
   }
 
   .navbar .search {
-    width: 135px;
+    width: 180px;
   }
+ 
 
   .main-title {
     font-size: 48px;
