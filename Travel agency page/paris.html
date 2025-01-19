@@ -1,1 +1,148 @@
-Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae quidem officia natus beatae iste consequatur delectus quas alias, est quos. Sint cupiditate eos eaque id consequatur, eum soluta ad numquam.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paris</title>
+    <link rel="stylesheet" href="./css/paris.css">
+    <link href="./css/footer.css" rel="stylesheet" type="text/css">
+    <link href="./css/header.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header>
+        <!-- Navbar Section -->
+        <nav class="navbar">
+    
+          <!-- Search Section -->
+          <div class="search">
+            <input type="text" placeholder="Search" class="search-input">
+            <button id="search-button"><img src="./icons/search-white.svg" alt="Search" class="search-icon"></button>
+          </div>
+    
+          <!-- Logo Section -->
+          <div class="logo-container">
+            <img src="./icons/globe-white.svg" alt="Logo" class="logo">
+          </div>
+    
+          <!-- Menu Section -->
+          <div class="menu">
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">
+                <!-- Hamburger icon -->
+                <img src="./icons/three-bars-white.svg" alt="Menu" class="menu-icon">
+            </label>
+            <ul class="menu-list">
+              <li><a href="destinations.html" class="menu-link destinations-btn">Destinations</a></li>
+              <li><a href="#signin" class="menu-link signin-btn">Sign In</a></li>
+          </ul>
+        </div>
+        </nav>
+        <div class="gallery-name-container">
+            <h1>Book Your trip to Paris Today!</h1>
+        </div>
+        </header>
+    
+    <main class="paris-main">
+
+        <div class="paris-form-container">
+            <div class="date-range">
+                <div>
+                    <label for="date-from">From</label>
+                    <input type="date" id="date-from" name="date-from">
+                </div>
+                <div>
+                    <label for="date-to">To</label>
+                    <input type="date" id="date-to" name="date-to">
+                </div>
+            </div>
+
+            <div class="paris-guests">
+                <div>
+                    <label for="guests">Guests</label>
+                    <input placeholder="1" type="number" name="guests" id="guests" min="1" max="10" step="1" required>
+                </div>
+                <div>
+                    <label for="rooms">Rooms</label>
+                    <input placeholder="1" type="number" name="rooms" id="rooms" min="1" max="10" step="1" required>
+                </div>
+            </div>
+
+            <div>
+                <button id="form-button" type="submit" class="submit-button">&#8594;</button>
+            </div>
+        </div>
+          
+        <section class="paris-page">
+            <article class="paris-article">
+                <img src="./images/destinations/gallery/paris-page.png" alt="Eiffel Tower">
+                <div class="paris-text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Perspiciatis nisi hic illo ex blanditiis earum ratione 
+                        cupiditate officiis, rerum architecto saepe tempora optio 
+                        sequi excepturi omnis voluptatem veniam accusamus laborum 
+                        facilis facere nesciunt nostrum? Iure harum maxime 
+                        assumenda ab unde porro, sequi corrupti. Expedita unde id 
+                        non est quam repellat accusantium ratione, beatae tempora 
+                        voluptas blanditiis pariatur libero iste illum sequi ut, 
+                        voluptatibus saepe quidem eum similique tempore magnam 
+                        adipisci at. Omnis magnam tempora repellendus cumque rem 
+                        minima. Amet consectetur dignissimos quaerat et aperiam 
+                        expedita excepturi a eaque illum, architecto labore 
+                        accusantium earum aliquid eos voluptatem voluptatibus 
+                        alias corporis voluptates.</p>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+              <!-- Links -->
+            <div class="links">
+            <div class="col-lg-3 col-md-6 mb-4">
+                <h5 class="mb-3 text-dark">Links</h5>
+                <ul class="list-unstyled mb-0">
+                <li class="mb-1">
+                    <a href="#" class="link">Home</a>
+                </li>
+                <li class="mb-1">
+                    <a href="#" class="link">Destinations</a>
+                </li>
+                <li class="mb-1">
+                    <a href="#" class="link">About</a>
+                </li>
+                <li>
+                    <a href="#" class="link">Contact</a>
+                </li>
+                </ul>
+            </div>
+            </div>
+          
+              <!-- Newsletter form -->
+            <div class="newsletter">
+            <div class="container">
+                <div class="row">
+                <div class="col-sm-12">
+                    <div class="single">
+                    <h3>Newsletter</h3>
+                    <div>
+                        <p class="newsletter-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                        euismod, nisl nec tincidunt dapibus, magna libero fermentum augue.
+                        </p>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Enter your email">
+                        <span class="input-group-btn">
+                        <button class="btn btn-theme" type="submit">Subscribe</button>
+                        </span>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

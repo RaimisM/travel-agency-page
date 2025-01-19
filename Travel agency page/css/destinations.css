@@ -5,10 +5,7 @@ section {
     padding-top: 40px;
   }
 
-main {
-    width: 70%;
-    margin: 0 auto;
-  }
+
   
   h2 {
     font-size: 32px;
@@ -79,9 +76,7 @@ main {
       width: 100%;
     }
 
-    main {
-      width: 90%;
-    }
+
 
     p {
       width: 100%;

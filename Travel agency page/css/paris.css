@@ -1,0 +1,116 @@
+header {
+    height: 20rem !important;
+}
+
+
+
+.paris-main {
+    align-items: center;
+}
+
+.paris-page {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
+
+
+.paris-text {
+    position: absolute; /* Position text over image */
+    top: 4rem; /* Adjust distance from the top */
+    left: 4rem; /* Adjust distance from the left */
+    color: white; /* Adjust text color for better contrast */
+    z-index: 2; /* Make sure text appears above the image */
+    padding: 20px 15%;
+}
+
+.paris-text p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    width: 40%;
+    color: black;
+}
+
+article {
+    position: relative; /* Establish a positioning context for absolute elements */
+}
+
+article img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintain image aspect ratio */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .paris-page .row {
+        grid-template-columns: 1fr; /* Stack text and image vertically */
+    }
+    .paris-form-container {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: auto;
+    }
+    .paris-page img {
+        height: 50vh; /* Reduce image size for small screens */
+    }
+    .paris-text {
+        top: 2rem; /* Adjust positioning for smaller screens */
+        left: 2rem;
+        padding: 0;
+        line-height: 1rem;
+    }
+}
+
+.paris-form-container {
+    background-color: red; /* Red background for the form */
+    width: 400px; /* Fixed width for the container */
+    height: 250px; /* Fixed height for the container */
+    padding: 1rem; /* Padding inside the container for spacing */
+    box-sizing: border-box; /* Includes padding and border in the width/height */
+    border-radius: 8px; /* Optional: Rounded corners */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Spread form elements vertically */
+    align-items: center; /* Horizontally centers items */
+}
+
+.paris-form-container input,
+.paris-form-container button {
+    width: 100%; /* Inputs and buttons take full width of container */
+}
+
+.paris-form-container input {
+    margin-bottom: 0.5rem; /* Space between form elements */
+}
+
+/* Use flexbox to put guests and rooms on the same line */
+.paris-guests {
+    display: flex;
+    justify-content: space-between; /* Space out the two inputs */
+    width: 270px; /* Ensure it takes full width of container */
+    gap: 20px; /* Space between the two inputs */
+}
+
+.paris-guests div {
+    width: 48%; /* Set width of each input container so they fit side-by-side */
+}
+
+.paris-form-container button {
+    padding: 0.75rem; /* Adjust padding for better click area */
+    font-size: 1rem; /* Adjust font size if needed */
+    border: none; /* Remove default border */
+    background-color: #333; /* Button background color */
+    color: white; /* Button text color */
+    cursor: pointer; /* Pointer cursor for clickable effect */
+    border-radius: 4px; /* Optional: Rounded corners */
+}
+
+.paris-form-container button:hover {
+    background-color: #555; /* Darker background for hover effect */
+}
+
