@@ -108,9 +108,9 @@
 
     .contact-container form {
         margin-top: 20px;
-        flex-direction: column; /* Stack children vertically */
-        height: auto; /* Allow flexible height */
-        width: 90%; /* Make form span full width */
+        flex-direction: column;
+        height: auto;
+        width: 90%;
     }
 
     .contact-container form h1,
@@ -118,13 +118,13 @@
     .contact-container form input,
     .contact-container form textarea,
     .contact-container form button {
-        width: 100%; /* Make form elements span full width */
-        margin: 10px 0; /* Add space between elements */
+        width: 100%;
+        margin: 10px 0;
     }
 
     .contact-container form input#lastName,
     .contact-container form input#mobile {
-        margin-left: 0; /* Reset margin for inputs to avoid horizontal spacing */
+        margin-left: 0;
     }
 
     .contact-container form textarea {

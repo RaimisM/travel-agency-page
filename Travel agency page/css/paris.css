@@ -12,7 +12,7 @@ header {
 
 .paris-page, .paris-article {
     position: relative;
-    margin: 0; /* Ensure no margin on the article and page */
+    margin: 0; 
     padding: 0;
 }
 
@@ -82,21 +82,21 @@ article img {
 @media (max-width: 1300px) {
     .paris-article {
         display: flex;
-        flex-direction: column-reverse; /* Switches the order: text below, form above */
+        flex-direction: column-reverse;
     }
     .paris-form-container {
-        position: static; /* Allow form to follow normal document flow */
+        position: static; 
         width: 70%;
-        margin: 0 auto 1rem; /* Center and add margin */
+        margin: 0 auto 1rem;
         margin-top: 5%;
     }
     .paris-text {
-        position: static; /* Allow text to follow normal flow */
+        position: static;
         width: 100%;
     }
 
     .paris-article img {
-        opacity: 0.2; /* Set low opacity */
+        opacity: 0.2; 
         position: absolute;
         top: 0;
         left: 0;
@@ -111,8 +111,8 @@ article img {
 
     .paris-text {
         width: 90%;
-        margin-left: auto; /* Push text to the right */
-        margin-right: auto; /* Ensure equal space on both sides */
+        margin-left: auto; 
+        margin-right: auto;
         padding: 0;
     }
 }

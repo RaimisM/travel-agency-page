@@ -1,20 +1,21 @@
-section {
-    background-color: #f4f4f4;
+.home-section {
+    background-color: #fff;
     margin: 0 auto;
     padding-bottom: 40px;
     padding-top: 40px;
+    width: 70%;
   }
 
 
   
-  h2 {
+  .home-section h2 {
     font-size: 32px;
     font-weight: normal;
     text-align: left;
     margin-bottom: 30px;
   }
   
-  p {
+  .home-section p {
     font-size: 18px;
     line-height: 1.6;
     margin-bottom: 15px;
@@ -73,13 +74,15 @@ section {
   
   @media (max-width: 768px) {
     .destination_image {
-      width: 100%;
+      width: 90%;
     }
 
+    .home-section {
+      width: 90%;
+    }
 
-
-    p {
-      width: 100%;
+    .home-section p {
+      width: 90%;
     }
 
     .image-grid {
