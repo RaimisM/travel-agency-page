@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contact-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-container form {
+    width: 670px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(30px);
+    flex-wrap: wrap;
+}
+
+.contact-container form h1 {
+    color: white;
+    font-weight: 700;
+    line-height: 2;
+    margin-top: 20px;
+    width: 500px;
+    text-align: center;
+}
+
+.contact-container form input {
+    width: 300px;
+    height: 50px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    margin-bottom: 10px;
+    background: none;
+    border-bottom: 2px solid #fff;
+    color: white;
+}
+
+.contact-container form input::placeholder {
+    color: white;
+}
+
+.contact-container form #lastName,
+.contact-container form #mobile {
+    margin-left: 20px;
+}
+
+.contact-container form h4 {
+    color: white;
+    font-weight: 300;
+    margin-top: 20px;
+    width: 600px;
+    font-size: 20px;
+}
+
+
+.contact-container form textarea {
+    background: none;
+    border: none;
+    border-bottom: 2px solid #fff;
+    color: white;
+    font-weight: 200;
+    font-size: 20px;
+    padding: 10px;
+    outline: none;
+    min-height: 90px;
+    max-height: 90px;
+    min-width: 620px;
+    max-width: 620px;
+}
+
+
+
+.contact-container form button {
+    background: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+    margin-top: 20px;
+    border-radius: 5px;
+    width: 200px;
+    height: 60px;
+    padding: 0;
+    margin-bottom: 30px;
+    transition: 0.3s;
+}
+
+.contact-container form button:hover {
+    background: black;
+    color: white;
+    transition: .5s ease;
+}
+
+@media (max-width: 768px) {
+    header {
+        height: 100% !important;
+    }
+
+    .contact-container form {
+        margin-top: 20px;
+        flex-direction: column; /* Stack children vertically */
+        height: auto; /* Allow flexible height */
+        width: 90%; /* Make form span full width */
+    }
+
+    .contact-container form h1,
+    .contact-container form h4,
+    .contact-container form input,
+    .contact-container form textarea,
+    .contact-container form button {
+        width: 100%; /* Make form elements span full width */
+        margin: 10px 0; /* Add space between elements */
+    }
+
+    .contact-container form input#lastName,
+    .contact-container form input#mobile {
+        margin-left: 0; /* Reset margin for inputs to avoid horizontal spacing */
+    }
+
+    .contact-container form textarea {
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    .contact-container form h4 {
+        margin-left: 10px;
+    }
+}
