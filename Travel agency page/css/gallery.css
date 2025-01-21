@@ -10,14 +10,11 @@ header{
 }
 
 .gallery-name-container {
-    display: block; /* Ensure it is block-level */
-    width: fit-content; /* Ensure it only takes up as much space as it needs */
+    display: block;
+    width: fit-content;
     padding: 20px;
     margin: 0 auto;
 }
-
-
-
 
 .gallery {
     display: grid;
@@ -38,9 +35,8 @@ header{
 }
 
 .paris-link {
-    display: block; /* Allows full clickable area */
-    position: relative; /* Ensures link wraps all elements */
-    text-decoration: none; /* Removes underline */
+    display: block;
+    position: relative;
 }
 .paris-group {
     display: contents;
@@ -65,29 +61,30 @@ header{
     opacity: 1;
     transition: opacity 0.3s ease;
 }
+
 .gallery-item {
     position: relative;
 }
+
 .overlay {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
     color: white;
     font-weight: bold;
     text-align: center;
     opacity: 0;
     pointer-events: none; 
     transition: opacity 0.3s ease;
-    font-family: 'Dancing Script', sans-serif;
 }
-
 
 @media screen and (max-width: 768px) {
     .gallery {
       grid-template-columns: 1fr;
       gap: 10px;
-      padding: 20px; 
+      padding: 5%; 
     }
   }
