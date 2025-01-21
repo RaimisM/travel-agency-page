@@ -31,7 +31,7 @@ header {
 .paris-form-container {
     position: absolute;
     top: 10%; 
-    right: 10%;
+    right: 15%;
     width: 30%;
     min-width: 300px;
     padding: 1rem;
@@ -76,10 +76,10 @@ header {
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
     position: absolute;
-    top: 15%;
-    left: 10%;
-    width: 33%;
-    margin-bottom: 50px;
+    top: 20%;
+    left: 15%;
+    width: 30%;
+    margin-bottom: 20px;
     text-align: justify;
 }
 
@@ -91,8 +91,12 @@ header {
 }
 
 #third-text {
-    position: relative;
-    width: 205%;
+    position: absolute;
+    top: 40%; /* Adjust the vertical position */
+    right: 15%; /* Moves it to the right side */
+    width: auto;
+    width: 30%;
+    margin-bottom: 20px;
 }
 
 .paris-text {
@@ -134,12 +138,14 @@ header {
             left: 0;
             width: 100%;
             height: 100%;
+            object-fit: cover;
+            object-position: bottom;
         }
     
         .paris-container {
             flex-direction: column;
             width: 70%;
-            left: 5%;
+            left: 15%;
             gap: 2rem;
             position: relative;
             top: auto;
@@ -154,6 +160,12 @@ header {
         .paris-text {
             position: relative;
             z-index: 1;
+        }
+
+        #third-text {
+            position: relative;
+            left: 15%; /* Keep it aligned to the right */
+            width: 70%; /* Make it take full width if needed */
         }
 
     }
@@ -179,5 +191,10 @@ header {
 
     .paris-container {
         width: 90%;
+        left: 5%;
+    }
+    #third-text {
+        left: 5%; /* Keep it aligned to the right */
+        width: 90%; /* Make it take full width if needed */
     }
 }
