@@ -103,5 +103,9 @@
     }
   }
   
-
+@media (max-width: 1300px) {
+  .home-section p {
+    width: 100%;
+  }
+}
   
