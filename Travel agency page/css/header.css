@@ -26,7 +26,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 10px;
   background-color: rgba(43, 84, 128, 0.1);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
   width: 100%;
@@ -41,14 +41,14 @@ header {
 
 .navbar .logo {
   width: 40px;
-  height: auto;
+  height: 100%;
 }
 
 .navbar .search {
   display: flex;
-  align-items: center;
   width: 200px;
   position: relative;
+  height: 100%;
 }
 
 #search-button {
