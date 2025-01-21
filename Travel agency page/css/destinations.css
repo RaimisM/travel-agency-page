@@ -63,15 +63,16 @@
   
   .destination_image h3 {
     bottom: 40px;
-    font-family: Dancing Script;
     font-weight: 900;
     font-size: 40px;
+    font-family: 'Dancing Script', sans-serif;
   }
   
   .destination_image h4 {
     bottom: 5px;
     font-weight: normal;
     font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
   }
   
   @media (max-width: 768px) {

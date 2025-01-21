@@ -1,22 +1,27 @@
+.success-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
 .success-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 400px;
     padding: 20px;
     text-align: center;
-    background-color: non;
     border: 2px solid #ccc;
     border-radius: 10px;
     backdrop-filter: blur(20px);
-    box-sizing: border-box;
     max-width: 700px;
+    width: 100%;
+    height: 400px;
+    box-sizing: border-box;
     margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .success-container h6 {
@@ -47,10 +52,6 @@
 }
 
 @media (max-width: 768px) {
-    .success-container {
-        min-height: 50%;
-        min-width: 90%;
-    }
     .success-container h6 {
         font-size: 1.5em;
     }
