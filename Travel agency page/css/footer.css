@@ -117,10 +117,10 @@
   @media (max-width: 768px) {
     .footer-container {
         flex-direction: column;
-        align-items: left;
+        align-items: flex-start;
         text-align: left;
         width: 90%;
-        margin: none;
+        margin: 0;
     }
 
     .links, .newsletter {
