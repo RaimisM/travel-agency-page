@@ -24,6 +24,7 @@
     display: inline-block;
     width: 33%;
     vertical-align: top;
+    padding-right: 10px;
   }
   
   /* Image Styling */
@@ -37,7 +38,14 @@
     position: relative;
     overflow: hidden;
     text-align: center;
-    border-radius: 5%;
+  }
+
+  #corner-image-1 {
+    border-radius: 5% 0 0 5%;
+  }
+  
+  #corner-image-2 {
+    border-radius: 0 5% 5% 0;
   }
   
   .destination_image img {
