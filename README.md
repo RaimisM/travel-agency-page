@@ -6,6 +6,8 @@ This project is a responsive HTML page designed to facilitate trip bookings. The
 
 - Clone or download the project files from [GitHub Repository ](https://github.com/RaimisM/travel-agency-page.git).
 
+- Open ```Travel agency page``` folder.
+
 - Open the HTML file ```index.html``` in a web browser.
 
 - Interact with the booking form to select destinations, dates, guests, and rooms.
