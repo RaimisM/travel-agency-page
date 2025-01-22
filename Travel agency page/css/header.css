@@ -28,7 +28,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  background-color: rgba(43, 84, 128, 0.1);
+  background-color: rgba(10, 10, 10, 0.164);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
   width: 100%;
   position: relative;
@@ -49,13 +49,13 @@ header {
 
 .navbar .search {
   display: flex;
-  width: 200px;
+  width: 130px;
   position: relative;
   height: 100%;
 }
 
 #search-button {
-  background-color: gold;
+  background-color: rgba(255, 255, 255, 0.264);
   width: 50px;
   height: 40px;
 }
@@ -68,11 +68,16 @@ header {
 
 .navbar .search-input {
   height: 40px;
-  border: none;
   border-radius: 4px 0 0 4px;
-  background-color: rgba(255, 255, 255, 0.663);
+  background-color: transparent;
   color: black;
   outline: none;
+  background-color: rgba(255, 255, 255, 0.264);
+}
+
+.navbar .search-input::placeholder {
+  color: white;
+  text-align: center;
 }
 
 .navbar .menu {
@@ -176,7 +181,6 @@ select {
     text-decoration: none;
     padding: 10px;
     font-size: 16px;
-    font-weight: bold;
     border-radius: 40px;
     color: white;
     transition: background-color 0.3s ease, transform 0.2s ease;
@@ -186,14 +190,15 @@ select {
   }
   
   .menu-link.signin-btn {
-    background-color: gold;
+    background-color: white;
+    color: black;
   }
   
   .menu-link.signin-btn:hover,
   .menu-link.destinations-btn:hover {
-    background-color: goldenrod;
+    background-color: rgb(251, 223, 151);
     transform: scale(1.1);
-    color: rgb(3, 70, 226);
+    color: rgb(2, 12, 36);
   }
 
 @media (max-width: 768px) {
@@ -254,10 +259,6 @@ select {
 
   .navbar .menu-link:hover {
     background-color: rgba(255, 255, 255, 0.15);
-  }
-
-  .navbar .search {
-    width: 130px;
   }
 
   .main-title {
