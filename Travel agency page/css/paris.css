@@ -57,18 +57,20 @@ header {
     width: 48%;
 }
 
-.paris-form-container button {
-    padding: 0.75rem;
-    font-size: 1rem;
-    border: none;
-    background-color: #333;
+.paris-form-container-button {
+    display: inline-block;
+    padding: 10px 10px;
+    background-color: gold;
     color: black;
-    cursor: pointer;
-    border-radius: 4px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    width: 100%;
 }
 
-.paris-form-container button:hover {
-    background-color: #555;
+.paris-form-container-button:hover {
+    background-color: goldenrod;
 }
 
 .paris-container {
